@@ -1,5 +1,12 @@
 const express = require('express')
 const app = express()
+const cors = require('cors');
+
+app.use(express.json())
+var corsOptions = {
+    origin: "http://localhost:3000"
+};
+app.use(cors(corsOptions));
 
 const metadata = [
     {
@@ -53,8 +60,14 @@ const metadata = [
 ]
 
 app.get('/tokenMetadata', (req, res) => {
-    res.send(metadata[req.query.id])
+    const id = req.query.id
+    if(!id)
+        res.send(metadata)
+    else 
+        res.send(metadata[req.query.id])
 })
+
+app.use(cors());
 
 app.listen(8080, () => {
     console.log('Example app listening on port 8080!')
