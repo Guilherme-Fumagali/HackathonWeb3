@@ -17,6 +17,7 @@ const metadata = [
         "metragem do solo": "1000",
         "metragem construida": "500",
         "endereco": "Rua das Flores, 123",
+        "imgPath": "/assets/casa1.jpg" 
     },
     {
         "uuid": "1234567890-1",
@@ -26,6 +27,7 @@ const metadata = [
         "metragem do solo": "250",
         "metragem construida": "195",
         "endereco": "Rua das Flores, 430",
+        "imgPath": "/assets/casa2.jpg" 
     },
     {
         "uuid": "1234567890-2",
@@ -36,6 +38,7 @@ const metadata = [
         "metragem do solo": "500",
         "metragem construida": "495",
         "endereco": "Rua dos Lírios, 23",
+        "imgPath": "/assets/casa3.jpg" 
     },
     {
         "uuid": "1234567890-3",
@@ -46,6 +49,7 @@ const metadata = [
         "metragem do solo": "352",
         "metragem construida": "502",
         "endereco": "Rua dos Lírios, 52",
+        "imgPath": "/assets/casa4.jpg" 
     },
     {
         "uuid": "1234567890-4",
@@ -56,10 +60,12 @@ const metadata = [
         "metragem do solo": "700",
         "metragem construida": "600",
         "endereco": "Rua 121, 52",
+        "imgPath": "/assets/casa5.jpg"
     },
 ]
 
 app.get('/tokenMetadata', (req, res) => {
+    console.log("solicitado metadata")
     const id = req.query.id
     if(!id)
         res.send(metadata)

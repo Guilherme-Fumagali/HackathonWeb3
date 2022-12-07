@@ -1,20 +1,35 @@
-import './App.css';
-import axios from 'axios';
 import React from 'react';
 
-const baseURL = 'http://localhost:8080';
-function App() {
-  const [tokenMetadata, setTokenMetadata] = React.useState()
+import './App.css';
 
+import ShowMetadata from './ShowMetadata';
+
+import axios from 'axios';
+const baseURL = 'http://localhost:8080';
+
+function App() {
+  const [tokenMetadata, setTokenMetadata] = React.useState(null)
   React.useEffect(() => {
     axios.get(`${baseURL}/tokenMetadata`).then((response) => {
       setTokenMetadata(response.data);
     })
   }, []);
 
-  console.log(tokenMetadata);
+  let viewMetadata
+
+  if (tokenMetadata) viewMetadata = tokenMetadata.map((metadado, i) => {
+      return (
+        <ShowMetadata metadado={metadado} key={i} />
+      )
+    })
+  else viewMetadata = <p>Carregando...</p>
+
+ 
+
   return (
-    <h1>App</h1>
+    <>
+     {tokenMetadata && viewMetadata}
+    </>
   );
 }
 
