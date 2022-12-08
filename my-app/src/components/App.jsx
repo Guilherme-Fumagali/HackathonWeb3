@@ -11,7 +11,9 @@ import axios from 'axios';
 const baseURL = 'http://localhost:8080';
 
 function App() {
-  const [tokenMetadata, setTokenMetadata] = React.useState(null)
+  const [tokenMetadata, setTokenMetadata] = React.useState(null)  
+  const [selecionado, setSelecionado] = React.useState(2)
+
   React.useEffect(() => {
     axios.get(`${baseURL}/tokenMetadata`).then((response) => {
       setTokenMetadata(response.data);
@@ -25,16 +27,18 @@ function App() {
           imgPath={metadado.imgPath}
           lote={metadado.lote} 
           quadra={metadado.quadra} 
-          endereco={metadado.endereco} 
+          endereco={metadado.endereco}
           key={i} 
         />)
     })
   return (
-    <>
-     <Header />
-     {viewMetadata}
-     {tokenMetadata && <FullMetadata metadado={tokenMetadata[0]} />}
-    </>
+    <div id='divWrapApp'>
+      <Header />
+      <div className='metadadosMenu'>
+        <div>{viewMetadata}</div>
+        <div>{tokenMetadata && <FullMetadata metadado={tokenMetadata[selecionado]} />}</div>
+      </div>
+    </div>
   );
 }
 

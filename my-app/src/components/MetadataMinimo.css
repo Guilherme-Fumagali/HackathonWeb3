@@ -6,6 +6,7 @@ div.wrap {
     height: 100px;
     min-width: 460px;
     width: 40%;
+    margin-top: 10px;
 
     border: solid 1px black;
     border-radius: 5px;
@@ -19,6 +20,7 @@ img#imgMetadataMinimo {
     max-height: 100px;
     width: 100px;
     object-fit: cover;
+    margin-right: 10px;
 
     animation: mask-animation-reversed 0.2s ;
     mask-image: linear-gradient(to left, transparent, black);
