@@ -21,7 +21,6 @@ function FiscalHome() {
         <div id='divWrapApp'>
         <Header />
         <ListaMetadatas metadados={metadadosTokens} />
-        <Perfil />
         </div>
     );
 }
