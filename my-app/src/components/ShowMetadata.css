@@ -11,16 +11,21 @@ div.wrap {
     border-radius: 5px;
 }
 
+div.wrap:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
 img {
     max-height: 170px;
     width: 100%;
+
+    animation: mask-animation-reversed 0.2s ;
     mask-image: linear-gradient(to left, transparent, black);
 }
 
-img:hover{
+img:hover, div.wrap:hover{
     animation: mask-animation 0.7s ;
     mask-size: 300%;
-
 }
 
 @keyframes mask-animation {
@@ -29,6 +34,15 @@ img:hover{
     }
     100% {
         mask-size: 300%;
+    }
+}
+
+@keyframes mask-animation-reversed {
+    0% {
+        mask-size: 300%
+    }
+    100% {
+        mask-size: 100%;
     }
 }
 
