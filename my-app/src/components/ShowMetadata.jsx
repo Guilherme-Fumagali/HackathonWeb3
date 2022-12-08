@@ -10,11 +10,15 @@ const ShowMetadata = ({metadado}) => {
             <section>
                 <img src={metadado.imgPath}/>            
             </section>
-            <section>
-                <p>{metadado.uuid}</p>
-                <p>Lote: {metadado.lote}</p>
-                <p>Quadra: {metadado.quadra}</p>
-                <p>Endereço: {metadado.endereco}</p>
+            <section className='dados'>
+                <p id='uuid'>{metadado.uuid}</p>
+                <div>
+                    <p>
+                        <span><strong>Lote:</strong> {metadado.lote}</span> 
+                        <span><strong>Quadra:</strong> {metadado.quadra}</span>
+                    </p>
+                    <p><strong>Endereço: </strong>{metadado.endereco}</p>
+                </div>
             </section>
             <button>Ver detalhes</button>
         </div>

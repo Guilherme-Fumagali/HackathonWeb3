@@ -1,8 +1,10 @@
 div.wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     height: 170px;
+    min-width: 600px;
     width: 40%;
 
     border: solid 1px black;
@@ -10,7 +12,58 @@ div.wrap {
 }
 
 img {
-    height: 100%;
+    max-height: 170px;
     width: 100%;
+    mask-image: linear-gradient(to left, transparent, black);
 }
 
+img:hover{
+    animation: mask-animation 0.7s ;
+    mask-size: 300%;
+
+}
+
+@keyframes mask-animation {
+    0% {
+        mask-size: 100%
+    }
+    100% {
+        mask-size: 300%;
+    }
+}
+
+button {
+    height: 35px;
+    width: 150px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-right: 15px;
+    margin-top: 85px;
+}
+
+button:hover{
+    background-color: #20da9c;
+    color: white;
+}
+
+p#uuid {
+    font-size: 12px;
+    color: gray;
+}
+
+span {
+    margin-right: 15px;
+}
+
+section.dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 90%;
+}
