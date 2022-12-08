@@ -4,15 +4,19 @@ import './FullMetadata.css';
 
 const FullMetadata = ({metadado}) => {
     return ( 
-        <section className='wrap'>
+        <section className='wrapFullMetadata'>
             <img id='imgFullMetadata' src={metadado.imgPath}/>
-            <p>uuid: {metadado.uuid}</p>
-            <p>Lote: {metadado.lote}</p>
-            <p>Quadra: {metadado.quadra}</p>
-            <p>Proprietário: {metadado.proprietario}</p>
-            <p>Metragem do solo: {metadado.metragem_solo}</p>
-            <p>Metragem construída: {metadado.metragem_construida}</p>
-            <p>Endereço: {metadado.endereco}</p>
+            <div>
+                <p><strong>uuid: </strong>{metadado.uuid}</p>
+                <p className='loteQuadra'>
+                    <span><strong>Lote: </strong> {metadado.lote}</span>
+                    <span><strong>Quadra: </strong>{metadado.quadra}</span>
+                </p>
+                <p><strong>Proprietário: </strong>{metadado.proprietario}</p>
+                <p><strong>Metragem do solo: </strong>{metadado.metragem_solo}m<sup>2</sup></p>
+                <p><strong>Metragem construída: </strong>{metadado.metragem_construida}m<sup>2</sup></p>
+                <p><strong>Endereço: </strong>{metadado.endereco}</p>
+            </div>
         </section>
      );
 }

@@ -1,4 +1,4 @@
-div.wrap {
+div.wrap, div.wrapSelecionado {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,9 +10,14 @@ div.wrap {
 
     border: solid 1px black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 div.wrap:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+div.wrapSelecionado {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 

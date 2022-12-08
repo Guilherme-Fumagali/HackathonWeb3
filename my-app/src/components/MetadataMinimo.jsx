@@ -2,9 +2,9 @@ import React from 'react'
 
 import './MetadataMinimo.css'
 
-const MetadataMinimo = ({imgPath, lote, quadra, endereco}) => {
+const MetadataMinimo = ({imgPath, lote, quadra, endereco, isSelecionado}) => {
     return (  
-        <div className='wrap'>
+        <div className={isSelecionado ? 'wrapSelecionado' : 'wrap'}>
             <section>
                 <img id='imgMetadataMinimo' src={imgPath}/>            
             </section>

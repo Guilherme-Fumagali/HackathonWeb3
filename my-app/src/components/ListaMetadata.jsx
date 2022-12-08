@@ -5,7 +5,8 @@ import MetadataMinimo from './MetadataMinimo';
 
 import './ListaMetadata.css'
 const ListaMetadatas = ({metadados}) => {
-    const [selecionado, setSelecionado] = React.useState(0)
+    const [selecionado, setSelecionado] = React.useState(2)
+    console.log(selecionado)
 
     let viewMetadata = <p>Carregando...</p>
     if (metadados) viewMetadata = metadados.map((metadado, i) => {
@@ -15,6 +16,7 @@ const ListaMetadatas = ({metadados}) => {
             lote={metadado.lote} 
             quadra={metadado.quadra} 
             endereco={metadado.endereco}
+            isSelecionado={selecionado === i}
             key={i} 
           />)
     })
