@@ -1,0 +1,5 @@
+div.metadadosList {
+    display: flex;
+    flex-direction: row;
+    min-width: 700px;
+}

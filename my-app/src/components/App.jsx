@@ -2,42 +2,26 @@ import React from 'react';
 
 import './App.css';
 
-import MetadataMinimo from './MetadataMinimo';
-import Header from './Header';
-import FullMetadata from './FullMetadata';
 
+import Header from './Header';
+import ListaMetadatas from './ListaMetadata';
 
 import axios from 'axios';
 const baseURL = 'http://localhost:8080';
 
 function App() {
-  const [tokenMetadata, setTokenMetadata] = React.useState(null)  
-  const [selecionado, setSelecionado] = React.useState(2)
+  const [metadadosTokens, setMetadadosTokens] = React.useState(null)  
 
   React.useEffect(() => {
     axios.get(`${baseURL}/tokenMetadata`).then((response) => {
-      setTokenMetadata(response.data);
+      setMetadadosTokens(response.data);
     })
   }, []);
 
-  let viewMetadata = <p>Carregando...</p>
-  if (tokenMetadata) viewMetadata = tokenMetadata.map((metadado, i) => {
-      return (
-      <MetadataMinimo 
-          imgPath={metadado.imgPath}
-          lote={metadado.lote} 
-          quadra={metadado.quadra} 
-          endereco={metadado.endereco}
-          key={i} 
-        />)
-    })
   return (
     <div id='divWrapApp'>
       <Header />
-      <div className='metadadosMenu'>
-        <div>{viewMetadata}</div>
-        <div>{tokenMetadata && <FullMetadata metadado={tokenMetadata[selecionado]} />}</div>
-      </div>
+      <ListaMetadatas metadados={metadadosTokens} />
     </div>
   );
 }
