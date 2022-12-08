@@ -3,8 +3,8 @@ div.wrap {
     justify-content: space-between;
     align-items: center;
 
-    height: 170px;
-    min-width: 600px;
+    height: 100px;
+    min-width: 460px;
     width: 40%;
 
     border: solid 1px black;
@@ -15,15 +15,16 @@ div.wrap:hover {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-img {
-    max-height: 170px;
-    width: 100%;
+img#imgMetadataMinimo {
+    max-height: 100px;
+    width: 100px;
+    object-fit: cover;
 
     animation: mask-animation-reversed 0.2s ;
     mask-image: linear-gradient(to left, transparent, black);
 }
 
-img:hover, div.wrap:hover{
+img#imgMetadataMinimo:hover, div.wrap:hover{
     animation: mask-animation 0.7s ;
     mask-size: 300%;
 }
@@ -47,27 +48,21 @@ img:hover, div.wrap:hover{
 }
 
 button {
-    height: 35px;
-    width: 150px;
+    height: 30px;
+    width: 110px;
     background-color: #ddd;
     border: none;
     border-radius: 12px;
     color: black;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     transition: 0.3s;
     margin-right: 15px;
-    margin-top: 85px;
 }
 
 button:hover{
     background-color: #20da9c;
     color: white;
-}
-
-p#uuid {
-    font-size: 12px;
-    color: gray;
 }
 
 span {
@@ -80,4 +75,5 @@ section.dados {
     justify-content: space-between;
     align-items: flex-start;
     height: 90%;
+    width: 300px;
 }

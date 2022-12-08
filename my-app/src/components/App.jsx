@@ -2,7 +2,10 @@ import React from 'react';
 
 import './App.css';
 
-import ShowMetadata from './ShowMetadata';
+import MetadataMinimo from './MetadataMinimo';
+import Header from './Header';
+import FullMetadata from './FullMetadata';
+
 
 import axios from 'axios';
 const baseURL = 'http://localhost:8080';
@@ -15,20 +18,22 @@ function App() {
     })
   }, []);
 
-  let viewMetadata
-
+  let viewMetadata = <p>Carregando...</p>
   if (tokenMetadata) viewMetadata = tokenMetadata.map((metadado, i) => {
       return (
-        <ShowMetadata metadado={metadado} key={i} />
-      )
+      <MetadataMinimo 
+          imgPath={metadado.imgPath}
+          lote={metadado.lote} 
+          quadra={metadado.quadra} 
+          endereco={metadado.endereco} 
+          key={i} 
+        />)
     })
-  else viewMetadata = <p>Carregando...</p>
-
- 
-
   return (
     <>
-     {tokenMetadata && viewMetadata}
+     <Header />
+     {viewMetadata}
+     {tokenMetadata && <FullMetadata metadado={tokenMetadata[0]} />}
     </>
   );
 }
