@@ -1,0 +1,10 @@
+div.metadadosMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+#divWrapApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
