@@ -54,7 +54,6 @@ function FiscalHome() {
 export default FiscalHome;
 
 /*  TODO
-    Mudar os tamanhos dos botões
     Numero da certidao levar para a certidão
     Ligar com a blockchain
     Botão de feedback para o fiscal

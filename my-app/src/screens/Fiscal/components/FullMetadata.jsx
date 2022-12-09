@@ -8,7 +8,7 @@ const FullMetadata = ({metadado, isJob}) => {
         <section className='wrapFullMetadata'>
             <img id='imgFullMetadata' src={metadado.imgPath} alt="Imagem do patrimônio"/>
             <div>
-                <p><strong>Certidão de matrícula: </strong>{metadado.uuid}</p>
+                <p><a href="https://documentonobrasil.com.br/img5.1/certidao-imovel.jpg"><strong>Certidão de matrícula: </strong>{metadado.uuid}</a></p>
                 <p className='loteQuadra'>
                     <span><strong>Lote: </strong> {metadado.lote}</span>
                     <span><strong>Quadra: </strong>{metadado.quadra}</span>

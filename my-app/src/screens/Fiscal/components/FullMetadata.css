@@ -16,3 +16,12 @@ section.wrapFullMetadata {
     object-fit: cover;
     mask-image: linear-gradient(to left, black);
 }
+
+a{
+    text-decoration: none;
+    color: #11d392;
+}
+
+a:hover {
+    text-decoration: underline;
+}
