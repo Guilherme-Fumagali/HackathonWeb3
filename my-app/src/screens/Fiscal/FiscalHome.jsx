@@ -43,7 +43,7 @@ function FiscalHome() {
             <Header />
             <div id='divButtons'>
                 <button onClick={(e) => handleButtonClick(e)} className={painelSelecionado === painel[0] ? 'btnHomeSelecionado' : 'btnHome'}>{painel[0]}</button>
-                <button onClick={(e) => handleButtonClick(e)} style={renderiza ? {color: "black"} : {color: "gray"}} className={painelSelecionado === painel[1] ? 'btnAvaliacaoSelecionado' : 'btnAvaliacao'}>{painel[1]}</button>
+                <button onClick={(e) => handleButtonClick(e)} style={renderiza ? {} : {color: "gray"}} className={painelSelecionado === painel[1] ? 'btnAvaliacaoSelecionado' : 'btnAvaliacao'}>{painel[1]}</button>
             </div>
             {painelSelecionado === painel[0] && <p id={'listaView'}><ListaMetadatas metadados={metadadosTokens} Jobs={Jobs} setJobs={handleSetJobs} /></p>}
             {painelSelecionado === painel[1] && <p id={'listaView'}><ListaMetadatas metadados={Jobs} Jobs={Jobs} setJobs={handleSetJobs} /></p>}
@@ -54,8 +54,8 @@ function FiscalHome() {
 export default FiscalHome;
 
 /*  TODO
-    Numero da certidao levar para a certidão
     Ligar com a blockchain
+    
     Botão de feedback para o fiscal
     modificação na tela de perfil
 */
