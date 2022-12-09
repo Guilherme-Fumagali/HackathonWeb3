@@ -10,7 +10,7 @@ const Perfil = () => {
         <div id="body">         
             <div id="perfil" class="profile">
                 <div class="image">
-                    <img class="round" id='planta' src={'/assets/planta.jpeg'} width="100%"/>    
+                    <img class="round" id='planta' alt='Foto de perfil' src={'/assets/planta.jpeg'} width="100%"/>    
                 </div>
 
                 <div class="info">

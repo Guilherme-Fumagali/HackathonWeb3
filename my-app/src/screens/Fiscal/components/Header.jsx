@@ -1,6 +1,6 @@
 import React from 'react';
 import { CgProfile } from 'react-icons/cg';
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import './Header.css';
 

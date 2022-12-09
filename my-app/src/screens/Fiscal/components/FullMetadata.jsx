@@ -2,7 +2,7 @@ import React from 'react'
 
 import './FullMetadata.css';
 
-const FullMetadata = ({metadado}) => {
+const FullMetadata = ({metadado, isJob}) => {
     if(!metadado) return (<section className='wrapFullMetadata'>Selecione um patrimônio para ver mais detalhes</section>)
     return ( 
         <section className='wrapFullMetadata'>
@@ -17,6 +17,8 @@ const FullMetadata = ({metadado}) => {
                 <p><strong>Metragem do solo: </strong>{metadado.metragem_solo}m<sup>2</sup></p>
                 <p><strong>Metragem construída: </strong>{metadado.metragem_construida}m<sup>2</sup></p>
                 <p><strong>Endereço: </strong>{metadado.endereco}</p>
+                {isJob && <button>Avaliar</button>}
+                
             </div>
         </section>
     

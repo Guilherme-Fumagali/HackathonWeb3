@@ -11,8 +11,9 @@ div.metadadosMenu {
 }
 
 #listaView {
-    border: solid 1px black;
-    padding: 10px;
+    border: solid 1px rgb(40, 40, 48);
+    padding: 20px 30px;
+    border-radius: 2%;
     margin: 0;
 }
 

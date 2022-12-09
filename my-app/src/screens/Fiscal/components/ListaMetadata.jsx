@@ -19,6 +19,10 @@ const ListaMetadatas = ({metadados, Jobs, setJobs}) => {
         setJobs(servicos)
     }
 
+    const isAJob = (metadado) => {
+        return servicos.findIndex(obj => obj.uuid === metadado.uuid) >= 0
+    } 
+
     let viewMetadata = <p>Carregando...</p>
     if (metadados.length >= 0) viewMetadata = metadados.map((metadado, i) => {
         return (
@@ -30,7 +34,7 @@ const ListaMetadatas = ({metadados, Jobs, setJobs}) => {
             isSelecionado={selecionado === i}
             onClickFunction={() => setSelecionado(i)}
             onClickButton={() => handleClickButton(metadado)}
-            isJob={servicos.findIndex(obj => obj.uuid === metadado.uuid) >= 0}
+            isJob={isAJob(metadado)}
             key={i} 
           />)
     })
@@ -38,7 +42,7 @@ const ListaMetadatas = ({metadados, Jobs, setJobs}) => {
     return ( 
         <div className='metadadosList'>
             <div>{viewMetadata}</div>
-            <div>{metadados.length && <FullMetadata metadado={metadados[selecionado]} />}</div>
+            <div>{metadados.length && <FullMetadata isJob={isAJob(metadados[selecionado])} metadado={metadados[selecionado]} />}</div>
         </div>
     );
 }
