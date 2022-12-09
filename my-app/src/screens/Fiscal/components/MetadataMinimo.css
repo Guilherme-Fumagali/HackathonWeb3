@@ -55,7 +55,7 @@ img#imgMetadataMinimo:hover, div.wrap:hover{
     }
 }
 
-button {
+button#metMinimo {
     height: 30px;
     width: 110px;
     background-color: #ddd;
@@ -68,12 +68,12 @@ button {
     margin-right: 15px;
 }
 
-button.yes {
+button#metMinimo.yes {
     background-color: #20da9c;
     color: white;
 }
 
-button:hover{
+button#metMinimo:hover{
     background-color: #20da9c;
     color: white;
 }

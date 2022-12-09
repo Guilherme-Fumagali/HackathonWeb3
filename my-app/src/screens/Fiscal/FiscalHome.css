@@ -7,9 +7,38 @@ div.metadadosMenu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 #listaView {
     border: solid 1px black;
     padding: 10px;
+    margin: 0;
+}
+
+#divButtons {
+    width: 100%;
+    text-align: end;
+}
+
+button.btnHome{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 5px;
+
+    height: 30px;
+    width: 110px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btnHome:hover{
+    color: #20da9c;
+    background-color: transparent;
+    border-radius: 0;
+    border: solid 1px transparent;
+    border-bottom: solid 1px #20da9c;
 }

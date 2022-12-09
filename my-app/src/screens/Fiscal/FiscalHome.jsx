@@ -19,6 +19,10 @@ function FiscalHome() {
     return (
         <div id='divWrapApp'>
             <Header />
+            <div id='divButtons'>
+                <button className='btnHome'>Home</button>
+                <button className='btnHome'>My Jobs</button>
+            </div>
             <p id={'listaView'}><ListaMetadatas metadados={metadadosTokens} /></p>
         </div>
     );
