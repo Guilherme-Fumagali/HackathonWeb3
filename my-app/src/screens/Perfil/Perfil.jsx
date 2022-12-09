@@ -16,7 +16,7 @@ const Perfil = () => {
                 <div class="info">
                     <h1>Informações</h1>
                     <ul>
-                        <li>Aberaldo Pereira</li>
+                        <li>Abelardo Pereira</li>
                         <li>Rua dos Fulanos, Bairro Beltrano, n123</li>
                         <li>Locais avaliados: 12</li>
                         <li>Avaliações aprovadas: 11</li>
