@@ -17,7 +17,7 @@ div.metadadosMenu {
 }
 
 #divButtons {
-    width: 100%;
+    min-width: 940px;
     text-align: end;
 }
 
@@ -34,6 +34,25 @@ button.btnHome{
     font-size: 14px;
     transition: 0.3s;
 }
+
+button.btnHomeSelecionado{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 5px;
+
+    height: 30px;
+    width: 110px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.3s;
+
+    color: #20da9c;
+    border: solid 1px transparent;
+    border-bottom: solid 1px #20da9c;
+}
+
 
 .btnHome:hover{
     color: #20da9c;

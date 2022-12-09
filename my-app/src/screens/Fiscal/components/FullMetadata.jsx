@@ -5,7 +5,7 @@ import './FullMetadata.css';
 const FullMetadata = ({metadado}) => {
     return ( 
         <section className='wrapFullMetadata'>
-            <img id='imgFullMetadata' src={metadado.imgPath}/>
+            <img id='imgFullMetadata' src={metadado.imgPath} alt="Imagem do patrimônio"/>
             <div>
                 <p><strong>uuid: </strong>{metadado.uuid}</p>
                 <p className='loteQuadra'>
