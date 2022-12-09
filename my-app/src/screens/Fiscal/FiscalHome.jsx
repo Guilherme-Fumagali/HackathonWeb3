@@ -18,8 +18,8 @@ function FiscalHome() {
     
     return (
         <div id='divWrapApp'>
-        <Header />
-        <ListaMetadatas metadados={metadadosTokens} />
+            <Header />
+            <p id={'listaView'}><ListaMetadatas metadados={metadadosTokens} /></p>
         </div>
     );
 }

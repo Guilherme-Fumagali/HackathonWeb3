@@ -5,8 +5,9 @@ div.wrap, div.wrapSelecionado {
 
     height: 100px;
     min-width: 460px;
-    width: 40%;
+    width: 500px;
     margin-top: 10px;
+    margin-bottom: 10px;
 
     border: solid 1px black;
     border-radius: 5px;

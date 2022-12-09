@@ -8,3 +8,8 @@ div.metadadosMenu {
     flex-direction: column;
     align-items: center;
 }
+
+#listaView {
+    border: solid 1px black;
+    padding: 10px;
+}

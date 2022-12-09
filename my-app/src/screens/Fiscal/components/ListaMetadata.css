@@ -2,5 +2,6 @@ div.metadadosList {
     display: flex;
     flex-direction: row;
     min-width: 700px;
+    gap: 40px;
     align-items: center;
 }
