@@ -31,9 +31,9 @@ button.btnHome{
 
     font-weight: bold;
     height: 30px;
-    width: 200px;
+    width: 260px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     transition: 0.3s;
 }
 
@@ -46,9 +46,9 @@ button.btnHomeSelecionado{
     font-weight: bold;
 
     height: 30px;
-    width: 200px;
+    width: 260px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     transition: 0.3s;
 
     color: #20da9c;
