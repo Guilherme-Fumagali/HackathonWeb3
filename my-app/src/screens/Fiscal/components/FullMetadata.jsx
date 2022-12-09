@@ -8,7 +8,7 @@ const FullMetadata = ({metadado, isJob}) => {
         <section className='wrapFullMetadata'>
             <img id='imgFullMetadata' src={metadado.imgPath} alt="Imagem do patrimônio"/>
             <div>
-                <p><strong>uuid: </strong>{metadado.uuid}</p>
+                <p><strong>Certidão de matrícula: </strong>{metadado.uuid}</p>
                 <p className='loteQuadra'>
                     <span><strong>Lote: </strong> {metadado.lote}</span>
                     <span><strong>Quadra: </strong>{metadado.quadra}</span>
@@ -17,7 +17,13 @@ const FullMetadata = ({metadado, isJob}) => {
                 <p><strong>Metragem do solo: </strong>{metadado.metragem_solo}m<sup>2</sup></p>
                 <p><strong>Metragem construída: </strong>{metadado.metragem_construida}m<sup>2</sup></p>
                 <p><strong>Endereço: </strong>{metadado.endereco}</p>
-                {isJob && <button>Avaliar</button>}
+                
+
+               {/*  <label for="story"></label>
+                <textarea id="story" name="story"
+                        rows="5" cols="33">
+                </textarea>
+                <button>Avaliar</button> */}
                 
             </div>
         </section>

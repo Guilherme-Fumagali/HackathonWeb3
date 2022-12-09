@@ -11,7 +11,7 @@ function FiscalHome() {
     const [metadadosTokens, setMetadadosTokens] = React.useState([])  
     const [Jobs, setJobs] = React.useState([])
     const [painelSelecionado, setPainelSelecionado] = React.useState('Home')
-    const painel = ['Home', 'My Jobs']
+    const painel = ['Home', 'Patrimônios em avaliação']
 
     console.log(Jobs)
     if(painelSelecionado === painel[1] && Jobs.length === 0)
