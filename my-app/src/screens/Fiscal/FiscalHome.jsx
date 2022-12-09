@@ -19,10 +19,9 @@ function FiscalHome() {
         setPainelSelecionado(painel[0])
 
     React.useEffect(() => {
-        if(!metadadosTokens.length)
-            axios.get(`${baseURL}/tokenMetadata`).then((response) => {
-                setMetadadosTokens(response.data);
-            })
+        axios.get(`${baseURL}/tokenMetadata`).then((response) => {
+            setMetadadosTokens(response.data);
+        })
     }, []);
 
     const handleButtonClick = (e) => {
