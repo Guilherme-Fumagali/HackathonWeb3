@@ -2,7 +2,8 @@ import React from 'react'
 
 import './MetadataMinimo.css'
 
-const MetadataMinimo = ({imgPath, lote, quadra, endereco, isSelecionado, onClickFunction}) => {
+const MetadataMinimo = ({imgPath, lote, quadra, endereco, isSelecionado, isJob, onClickFunction, onClickButton}) => {
+    if(isJob) console.log(endereco)
     return (  
         <div onClick={onClickFunction} className={isSelecionado ? 'wrapSelecionado' : 'wrap'}>
             <section>
@@ -17,7 +18,7 @@ const MetadataMinimo = ({imgPath, lote, quadra, endereco, isSelecionado, onClick
                     <p><strong>Endereço: </strong>{endereco}</p>
                 </div>
             </section>
-            <button>Ver detalhes</button>
+            <button className={isJob ? 'yes' : 'no'} onClick={onClickButton}>Aceitar</button>
         </div>
     );
 }

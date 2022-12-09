@@ -68,6 +68,11 @@ button {
     margin-right: 15px;
 }
 
+button.yes {
+    background-color: #20da9c;
+    color: white;
+}
+
 button:hover{
     background-color: #20da9c;
     color: white;
