@@ -10,12 +10,12 @@ const baseURL = 'http://localhost:8080';
 function FiscalHome() {
     const [metadadosTokens, setMetadadosTokens] = React.useState([])  
     const [Jobs, setJobs] = React.useState([])
-    const [painelSelecionado, setPainelSelecionado] = React.useState('Home')
-    const painel = ['Home', 'Patrimônios em avaliação']
+    const painel = ['Imóveis a serem avaliados', 'Imóveis em avaliação']
+    const [painelSelecionado, setPainelSelecionado] = React.useState(painel[0])
 
     console.log(Jobs)
     if(painelSelecionado === painel[1] && Jobs.length === 0)
-        setPainelSelecionado('Home')
+        setPainelSelecionado(painel[0])
 
     React.useEffect(() => {
         axios.get(`${baseURL}/tokenMetadata`).then((response) => {
