@@ -19,7 +19,7 @@ div.metadadosMenu {
 
 #divButtons {
     min-width: 940px;
-    text-align: end;
+    text-align: start;
 }
 
 button.btnHome{
@@ -29,8 +29,9 @@ button.btnHome{
     transition: 0.3s;
     padding: 5px;
 
+    font-weight: bold;
     height: 30px;
-    width: 180px;
+    width: 190px;
     text-align: center;
     font-size: 14px;
     transition: 0.3s;
@@ -42,9 +43,10 @@ button.btnHomeSelecionado{
     font-size: 14px;
     transition: 0.3s;
     padding: 5px;
+    font-weight: bold;
 
     height: 30px;
-    width: 180px;
+    width: 190px;
     text-align: center;
     font-size: 14px;
     transition: 0.3s;
