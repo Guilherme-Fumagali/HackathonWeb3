@@ -19,7 +19,6 @@ const ListaMetadatas = ({metadados, Jobs, setJobs}) => {
         setJobs(servicos)
     }
 
-    console.log(metadados)
     let viewMetadata = <p>Carregando...</p>
     if (metadados.length >= 0) viewMetadata = metadados.map((metadado, i) => {
         return (

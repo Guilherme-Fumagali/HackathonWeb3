@@ -3,6 +3,7 @@ import React from 'react'
 import './FullMetadata.css';
 
 const FullMetadata = ({metadado}) => {
+    if(!metadado) return (<section className='wrapFullMetadata'>Selecione um patrimônio para ver mais detalhes</section>)
     return ( 
         <section className='wrapFullMetadata'>
             <img id='imgFullMetadata' src={metadado.imgPath} alt="Imagem do patrimônio"/>
@@ -18,7 +19,8 @@ const FullMetadata = ({metadado}) => {
                 <p><strong>Endereço: </strong>{metadado.endereco}</p>
             </div>
         </section>
-     );
+    
+    );
 }
  
 export default FullMetadata;
