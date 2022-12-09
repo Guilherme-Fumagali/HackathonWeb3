@@ -20,14 +20,15 @@ div.metadadosMenu {
 #divButtons {
     min-width: 940px;
     text-align: start;
+    display: flex;
+    align-items:baseline;
+    justify-content: left;
 }
 
 button.btnHome{
     background-color: transparent;
     border-color: transparent;
-    font-size: 14px;
     transition: 0.3s;
-    padding: 5px;
 
     font-weight: bold;
     height: 30px;
@@ -40,9 +41,7 @@ button.btnHome{
 button.btnHomeSelecionado{
     background-color: transparent;
     border-color: transparent;
-    font-size: 14px;
     transition: 0.3s;
-    padding: 5px;
     font-weight: bold;
 
     height: 30px;
@@ -51,11 +50,54 @@ button.btnHomeSelecionado{
     font-size: 18px;
     transition: 0.3s;
 
-    color: #20da9c;
     border: solid 1px transparent;
     border-bottom: solid 1px #20da9c;
 }
 
+button.btnHomeSelecionado:hover{
+    color: #20da9c;
+}
+
+button.btnAvaliacao{
+    background-color: transparent;
+    border-color: transparent;
+    transition: 0.3s;
+    padding-bottom: 2px;
+
+    height: 30px;
+    width: 140px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+button.btnAvaliacao:hover{
+    color: #20da9c;
+    background-color: transparent; 
+    border-radius: 0;
+    border: solid 1px transparent;
+    border-bottom: solid 1px #20da9c;
+}
+
+button.btnAvaliacaoSelecionado{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 12px;
+    transition: 0.3s;
+    padding-bottom: 2px;
+
+
+    height: 30px;
+    width: 140px;
+    padding-top: 5px;
+    text-align: center;
+    transition: 0.3s;
+
+    color: #20da9c;
+    border: solid 1px transparent;
+    border-bottom: solid 1px #20da9c;
+}
 
 .btnHome:hover{
     color: #20da9c;
