@@ -4,9 +4,12 @@ section.wrapFullMetadata {
     border: solid 1px black;
     border-radius: 10px;
     width: 350px;
-    padding: 10px;
+    padding-bottom: 35px;
+    padding-top: 10px;
     align-items: center;
     background-color: rgb(245, 245, 245);
+    height: 500px;
+    
 }
 
 #imgFullMetadata {
@@ -15,4 +18,30 @@ section.wrapFullMetadata {
     height: auto;
     object-fit: cover;
     mask-image: linear-gradient(to left, black);
+    border-radius: 10px;
 }
+
+#feedback {
+    cursor: pointer;
+    height: 30px;
+    width: 110px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.3s;
+    position: relative;
+    margin-left: 85px;
+}
+
+#feedback:hover{
+    background-color: #20da9c;
+    color: white;
+}
+
+#fullMetadata{
+    margin-bottom: 30px;
+}
+

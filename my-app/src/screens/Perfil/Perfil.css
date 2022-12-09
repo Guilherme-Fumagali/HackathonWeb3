@@ -45,6 +45,7 @@
     text-align: center;
     align-items: center;
     margin: 20px;
+    width: 250px;
 
 }
 
@@ -60,6 +61,7 @@
     margin: 7px 7px 7px 7px;
     padding: 7px;
     color: black;
+    width: 190px;
 }
 
 .profile progress{
@@ -126,7 +128,7 @@
     position: absolute;
     top:0;
     right: 0;
-    animation: progress-text 1s ease-in forwards;
+    animation: progress-text 0.8s ease-in forwards;
 }
 
 @keyframes progress-text {

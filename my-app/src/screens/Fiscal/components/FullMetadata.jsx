@@ -7,7 +7,7 @@ const FullMetadata = ({metadado, isJob}) => {
     return ( 
         <section className='wrapFullMetadata'>
             <img id='imgFullMetadata' src={metadado.imgPath} alt="Imagem do patrimônio"/>
-            <div>
+            <div id="fullMetadata">
                 <p><strong>Certidão de matrícula: </strong>{metadado.uuid}</p>
                 <p className='loteQuadra'>
                     <span><strong>Lote: </strong> {metadado.lote}</span>
@@ -18,13 +18,7 @@ const FullMetadata = ({metadado, isJob}) => {
                 <p><strong>Metragem construída: </strong>{metadado.metragem_construida}m<sup>2</sup></p>
                 <p><strong>Endereço: </strong>{metadado.endereco}</p>
                 
-
-               {/*  <label for="story"></label>
-                <textarea id="story" name="story"
-                        rows="5" cols="33">
-                </textarea>
-                <button>Avaliar</button> */}
-                
+                {isJob && <button id='feedback'>Avaliação</button>}
             </div>
         </section>
     
