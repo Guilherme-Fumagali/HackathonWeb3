@@ -4,8 +4,8 @@ import FullMetadata from './FullMetadata';
 import MetadataMinimo from './MetadataMinimo';
 
 import './ListaMetadata.css'
-const ListaMetadatas = ({metadados}) => {
-    const [selecionado, setSelecionado] = React.useState(1)
+const ListaMetadatas = ({metadados, setJobs}) => {
+    const [selecionado, setSelecionado] = React.useState(0)
     const [servicos] = React.useState([])
     const [click, setClick] = React.useState(false)
 
@@ -38,7 +38,7 @@ const ListaMetadatas = ({metadados}) => {
     return ( 
         <div className='metadadosList'>
             <div>{viewMetadata}</div>
-            <div>{metadados && <FullMetadata metadado={metadados[selecionado]} />}</div>
+            <div>{metadados.length && <FullMetadata metadado={metadados[selecionado]} />}</div>
         </div>
     );
 }
