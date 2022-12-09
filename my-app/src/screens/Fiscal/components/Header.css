@@ -6,7 +6,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;    
+    padding-left: 10px 0; 
 }
 
 #usuario {
@@ -15,6 +15,64 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 150px;
+    cursor:pointer;
+    position: relative;
+}
+
+#usuario::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#usuario:hover::after{
+    width: 100%;
+}
+
+#principal{
+    cursor:pointer;
+    position: relative;
+}
+
+#principal::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#principal:hover::after{
+    width: 100%;
+}
+
+#principal2{
+    cursor:pointer;
+    position: relative;
+    
+}
+
+#principal2::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#principal2:hover::after{
+    width: 100%;
 }
 
 #CgProf {

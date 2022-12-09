@@ -1,0 +1,136 @@
+.profile *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#body{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.profile{
+    background-color: #11d392;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px #00000029;
+    color: black;
+    padding-top: 15px;
+    position: relative;
+    max-width: 400px;
+    text-align: center;;
+}
+
+.profile .image{
+    width: 170px;
+    margin: auto;
+}
+
+.profile .image .round{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.profile .info{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.profile .info ul{
+    list-style: none;
+}
+
+.profile .info ul li{
+    border: 1px solid black;
+    border-radius: 2px;
+    display:flow-root;
+    font-size: 12px;
+    margin: 7px 7px 7px 7px;
+    padding: 7px;
+    color: black;
+}
+
+.profile progress{
+    opacity: 0;
+}
+
+.profile .progress{
+    position: relative;
+    display: inline-block;
+    background: transparent ;
+    border: 1px solid black;
+    height: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.profile .progress::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75%;
+    background: transparent;
+}
+
+.profile .progress-label {
+    position: relative;
+}
+
+.profile .progress-label::after {
+    content: "75";
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+@keyframes progress-animation {
+    to {
+      width: 75%;
+    }
+}
+
+.profile .progress::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(to right, #00b09b, #96c93d);;
+    width: 0;
+    animation: progress-animation .7s ease-in forwards;
+}
+
+@property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+}
+
+.profile .progress-label::after {
+    counter-reset: num var(--num);
+    content: counter(num) '';
+    position: absolute;
+    top:0;
+    right: 0;
+    animation: progress-text 1s ease-in forwards;
+}
+
+@keyframes progress-text {
+    to {
+      --num: 75;
+    }
+}
