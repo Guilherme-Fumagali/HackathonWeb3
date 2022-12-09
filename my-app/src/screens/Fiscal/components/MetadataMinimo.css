@@ -91,4 +91,5 @@ section.dados {
     align-items: flex-start;
     height: 90%;
     width: 300px;
+    line-height: 10px;
 }

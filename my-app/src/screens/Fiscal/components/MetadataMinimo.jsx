@@ -15,6 +15,7 @@ const MetadataMinimo = ({imgPath, lote, quadra, endereco, isSelecionado, isJob, 
                         <span><strong>Quadra:</strong> {quadra}</span>
                     </p>
                     <p><strong>Endereço: </strong>{endereco}</p>
+                    <p><strong>Recompensa: 1 CELO</strong></p>
                 </div>
             </section>
             <button id='metMinimo' className={isJob ? 'yes' : 'no'} onClick={onClickButton}>Avaliar</button>
