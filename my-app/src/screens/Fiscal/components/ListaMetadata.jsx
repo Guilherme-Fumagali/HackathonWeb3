@@ -4,9 +4,9 @@ import FullMetadata from './FullMetadata';
 import MetadataMinimo from './MetadataMinimo';
 
 import './ListaMetadata.css'
-const ListaMetadatas = ({metadados, setJobs}) => {
+const ListaMetadatas = ({metadados, Jobs, setJobs}) => {
     const [selecionado, setSelecionado] = React.useState(0)
-    const [servicos] = React.useState([])
+    const [servicos] = React.useState(Jobs)
     const [click, setClick] = React.useState(false)
 
     const handleClickButton = (metadado) => {
@@ -16,11 +16,12 @@ const ListaMetadatas = ({metadados, setJobs}) => {
         else
             servicos.push(metadado)
         setClick(!click)
-        
+        setJobs(servicos)
     }
 
+    console.log(metadados)
     let viewMetadata = <p>Carregando...</p>
-    if (metadados) viewMetadata = metadados.map((metadado, i) => {
+    if (metadados.length >= 0) viewMetadata = metadados.map((metadado, i) => {
         return (
         <MetadataMinimo 
             imgPath={metadado.imgPath}
