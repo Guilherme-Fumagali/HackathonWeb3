@@ -6,9 +6,8 @@ import MetadataMinimo from './MetadataMinimo';
 import './ListaMetadata.css'
 const ListaMetadatas = ({metadados}) => {
     const [selecionado, setSelecionado] = React.useState(1)
-    const [servicos, setServicos] = React.useState([])
-
-    console.log(servicos)
+    const [servicos] = React.useState([])
+    const [click, setClick] = React.useState(false)
 
     const handleClickButton = (metadado) => {
         const i = servicos.findIndex(obj => obj.uuid === metadado.uuid)
@@ -16,19 +15,12 @@ const ListaMetadatas = ({metadados}) => {
             servicos.splice(i, 1)
         else
             servicos.push(metadado)
-    }
-
-    const searchInServicos = (metadado) => {
-        const i = servicos.findIndex(obj => obj.uuid === metadado.uuid)
-        if(i >= 0)
-            return true
-        else
-            return false
+        setClick(!click)
+        
     }
 
     let viewMetadata = <p>Carregando...</p>
     if (metadados) viewMetadata = metadados.map((metadado, i) => {
-        const isJob = searchInServicos(metadado)
         return (
         <MetadataMinimo 
             imgPath={metadado.imgPath}
@@ -38,7 +30,7 @@ const ListaMetadatas = ({metadados}) => {
             isSelecionado={selecionado === i}
             onClickFunction={() => setSelecionado(i)}
             onClickButton={() => handleClickButton(metadado)}
-            isJob={isJob}
+            isJob={servicos.findIndex(obj => obj.uuid === metadado.uuid) >= 0}
             key={i} 
           />)
     })

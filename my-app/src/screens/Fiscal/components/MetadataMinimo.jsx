@@ -3,11 +3,10 @@ import React from 'react'
 import './MetadataMinimo.css'
 
 const MetadataMinimo = ({imgPath, lote, quadra, endereco, isSelecionado, isJob, onClickFunction, onClickButton}) => {
-    if(isJob) console.log(endereco)
     return (  
         <div onClick={onClickFunction} className={isSelecionado ? 'wrapSelecionado' : 'wrap'}>
             <section>
-                <img id='imgMetadataMinimo' src={imgPath}/>            
+                <img id='imgMetadataMinimo' src={imgPath} alt="Imagem do patrimônio"/>            
             </section>
             <section className='dados'>
                 <div>
