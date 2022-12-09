@@ -67,6 +67,7 @@ button#metMinimo {
     font-size: 14px;
     transition: 0.3s;
     margin-right: 15px;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 }
 
 button#metMinimo.yes {

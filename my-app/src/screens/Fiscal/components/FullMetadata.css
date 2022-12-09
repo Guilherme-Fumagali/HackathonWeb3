@@ -8,7 +8,8 @@ section.wrapFullMetadata {
     padding-top: 10px;
     align-items: center;
     background-color: rgb(245, 245, 245);
-    height: 500px;
+    height: 502px;
+    line-height: 15px;
     
 }
 
@@ -34,6 +35,7 @@ section.wrapFullMetadata {
     transition: 0.3s;
     position: relative;
     margin-left: 85px;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 }
 
 #feedback:hover{
@@ -45,3 +47,14 @@ section.wrapFullMetadata {
     margin-bottom: 30px;
 }
 
+
+a{
+    text-decoration: underline;
+    color: black;
+    cursor: pointer
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #11d392;
+}
