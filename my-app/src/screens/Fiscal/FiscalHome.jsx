@@ -51,11 +51,4 @@ function FiscalHome() {
     );
 }
 
-export default FiscalHome;
-
-/*  TODO
-    Ligar com a blockchain
-    
-    Botão de feedback para o fiscal
-    modificação na tela de perfil
-*/
+export default FiscalHome; 
