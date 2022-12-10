@@ -8,6 +8,8 @@ Paricipantes
 ## Introdução
 
 
+Vídeo de apresentação do protótipo: <https://drive.google.com/file/d/12y6-hVuRCDkjuo1U4NaOmHZg-1B6UCN1/view?usp=sharing>
+
 ## Instalação
 Instruções para instalação e inicialização da ferramenta nas distribuições linux Ubuntu:
 
