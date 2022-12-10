@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Header from '../Fiscal/components/Header'
+import Header from '../components/Header'
 import './Perfil.css';
 
 const Perfil = () => {

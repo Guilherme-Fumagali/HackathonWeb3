@@ -3,6 +3,7 @@ import React from 'react'
 import './MetadataMinimo.css'
 
 const MetadataMinimo = ({imgPath, lote, quadra, endereco, isSelecionado, isJob, onClickFunction, onClickButton}) => {
+    const text = !isJob ? 'Avaliar' : 'Avaliando'
     return (  
         <div onClick={onClickFunction} className={isSelecionado ? 'wrapSelecionado' : 'wrap'}>
             <section>
@@ -18,7 +19,7 @@ const MetadataMinimo = ({imgPath, lote, quadra, endereco, isSelecionado, isJob, 
                     <p><strong>Recompensa: 1 CELO</strong></p>
                 </div>
             </section>
-            <button id='metMinimo' className={isJob ? 'yes' : 'no'} onClick={onClickButton}>Avaliar</button>
+            <button id='metMinimo' className={isJob ? 'yes' : 'no'} onClick={onClickButton}>{text}</button>
         </div>
     );
 }

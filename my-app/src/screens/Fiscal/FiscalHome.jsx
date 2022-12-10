@@ -2,7 +2,7 @@ import React from 'react'
 
 import './FiscalHome.css';
 
-import Header from './components/Header';
+import Header from '../components/Header';
 import ListaMetadatas from './components/ListaMetadata';
 import axios from 'axios';
 const baseURL = 'http://localhost:8080';
