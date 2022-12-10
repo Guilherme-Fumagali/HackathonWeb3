@@ -7,9 +7,9 @@ Paricipantes
 
 ## Introdução
 
-| Tela dos imóveis disponíveis para fiscalização | Perfil do fiscal | 
-|----------|----------|
-| <img src="https://user-images.githubusercontent.com/77642873/206871923-e3665df8-c0db-4ec4-97c6-55884dd42a76.png" alt="drawing" width="400"/> | <img src="https://user-images.githubusercontent.com/77642873/206872191-ec901077-f26b-406f-969d-01aa05ede574.png" alt="drawing" width="380"/>
+| Tela dos imóveis disponíveis para fiscalização | Imóveis sob avaliação do fiscal | Perfil do fiscal | 
+|----------|----------|----------|
+| <img src="https://user-images.githubusercontent.com/77642873/206871923-e3665df8-c0db-4ec4-97c6-55884dd42a76.png" alt="drawing" width="400"/> | <img src="https://user-images.githubusercontent.com/77642873/206873433-7dbd5919-9b89-46cf-b18a-94fa4793df23.png" alt="drawing" width="400"/> | <img src="https://user-images.githubusercontent.com/77642873/206872191-ec901077-f26b-406f-969d-01aa05ede574.png" alt="drawing" width="380"/>
 
 
 ## Instalação
