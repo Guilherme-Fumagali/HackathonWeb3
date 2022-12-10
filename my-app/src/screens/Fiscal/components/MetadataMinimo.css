@@ -75,6 +75,12 @@ button#metMinimo.yes {
     text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 }
 
+button#metMinimo.yes:hover {
+    background-color: rgba(255, 0, 0, 0.815);
+    color: white;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
 button#metMinimo:hover{
     background-color: #20da9c;
     color: white;
