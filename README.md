@@ -7,10 +7,6 @@ Paricipantes
 
 ## Introdução
 
-| Tela dos imóveis disponíveis para fiscalização | Imóveis sob avaliação do fiscal | Perfil do fiscal | 
-|----------|----------|----------|
-| <img src="https://user-images.githubusercontent.com/77642873/206871923-e3665df8-c0db-4ec4-97c6-55884dd42a76.png" alt="drawing" width="400"/> | <img src="https://user-images.githubusercontent.com/77642873/206873433-7dbd5919-9b89-46cf-b18a-94fa4793df23.png" alt="drawing" width="400"/> | <img src="https://user-images.githubusercontent.com/77642873/206872191-ec901077-f26b-406f-969d-01aa05ede574.png" alt="drawing" width="380"/>
-
 
 ## Instalação
 Instruções para instalação e inicialização da ferramenta nas distribuições linux Ubuntu:
@@ -61,5 +57,13 @@ O Smart Contract foi compilado na [IDE Remix](https://remix-project.org/), que j
 O código-fonte do Smart Contract pode ser consultado em: <https://github.com/Guilherme-Fumagali/HackathonWeb3/blob/ffd688e465ecc36ca0d4a938109aa8956f232ae8/contract.sol>
 
 ### Back-end
+Esse módulo do protótipo tem como objetivo manter os metadados dos NFTs, nele, com o framework [Express](https://expressjs.com/pt-br/), foi criada as URLs nas quais os NFTs redirecionam. 
+
+Esses metadados incluem as informações de uma certidão de matrícula, dando ênfase as usadas durante a incorporação do imóvel.
 
 ### Front-end
+Para oferecer uma interface aos fiscais, foi desenvolvido também algumas telas com a ferramenta [React](https://pt-br.reactjs.org/):
+
+| Tela dos imóveis disponíveis para fiscalização | Imóveis sob avaliação do fiscal | Perfil do fiscal | 
+|----------|----------|----------|
+| <img src="https://user-images.githubusercontent.com/77642873/206871923-e3665df8-c0db-4ec4-97c6-55884dd42a76.png" alt="drawing" width="400"/> | <img src="https://user-images.githubusercontent.com/77642873/206873433-7dbd5919-9b89-46cf-b18a-94fa4793df23.png" alt="drawing" width="400"/> | <img src="https://user-images.githubusercontent.com/77642873/206872191-ec901077-f26b-406f-969d-01aa05ede574.png" alt="drawing" width="380"/>
