@@ -2,7 +2,7 @@
 Paricipantes
 * [Guilherme Fumagali Marques](https://github.com/Guilherme-Fumagali)
 * [Leonardo Toshi Kimura](https://github.com/leonardotkimura)
-* [Rafael C](https://github.com/leafax)
+* [Rafael Loureiro Castro](https://github.com/leafax)
 * [Rodrigo Amaral](https://github.com/rodrigoamral)
 
 ## Introdução
@@ -50,3 +50,16 @@ npm start
 ```
 
 ## Arquitetura do protótipo
+
+### Blockchain
+Utilizando a rede [Alfajores Testnet](https://explorer.celo.org/alfajores/) mantida pela [CELO](https://celo.org/pt), foi desenvolvido a tokenização dos patrimônios, com base no modelo [ERC721](https://ethereum.org/pt/developers/docs/standards/tokens/erc-721/) (NFT equivalente). 
+
+Esses NFTs foram gerados a partir de um Smart Contract implementado com o auxílio da ferramenta [OpenZeppelin](https://www.openzeppelin.com/). A principal regra que este contrato propõe, é criar junto ao token um URI que leva ao metadado relacionado a ele.
+
+O Smart Contract foi compilado na [IDE Remix](https://remix-project.org/), que já contém as bilbiotecas usadas pelo OpenZeppelin. Os detalhes do deploy desse contrato pode ser acessado no site da CELO: <https://explorer.celo.org/alfajores/address/0x13eC92477C338dBae4043513Ca3c95cD715EEB63>
+
+O código-fonte do Smart Contract pode ser consultado em: <https://github.com/Guilherme-Fumagali/HackathonWeb3/blob/ffd688e465ecc36ca0d4a938109aa8956f232ae8/contract.sol>
+
+### Back-end
+
+### Front-end
