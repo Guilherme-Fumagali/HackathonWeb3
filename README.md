@@ -10,6 +10,9 @@ Paricipantes
 
 Vídeo de apresentação do protótipo: <https://drive.google.com/file/d/12y6-hVuRCDkjuo1U4NaOmHZg-1B6UCN1/view?usp=sharing>
 
+Vídeo de apresentação do Projeto: https://youtu.be/uRb-eikS4xo
+PDF: https://docs.google.com/presentation/d/1QOrnZt-KywR8lsQ8Pofqqir83SfboE62kt1NAQOY14U/edit?usp=sharing
+
 ## Instalação
 Instruções para instalação e inicialização da ferramenta nas distribuições linux Ubuntu:
 
